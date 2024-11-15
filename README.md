@@ -10,7 +10,7 @@ Een interactieve tool om de metrische eigenschappen van fallback-lettertypen aan
 
 Het is het beste om de Fallback Font Adjuster in een Chrome Incognito-venster te gebruiken, omdat Firefox niet goed omgaat met directe @font-face-aanpassingen in de browser. Dit kan leiden tot onregelmatige resultaten.
 
-[Meer info en demo op](https://janhoek.com/fallback-font-adjuster/)
+[Meer info en demo](https://janhoek.com/fallback-font-adjuster/)
 
 ## Eigenschappen
 

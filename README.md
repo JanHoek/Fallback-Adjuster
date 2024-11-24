@@ -41,8 +41,18 @@ Het is het beste om de Fallback Font Adjuster in een Chrome Incognito-venster te
 1. Open de tool in je browser in een incognitovenster om zoveel 
    mogelijk invloed van extensies en andere factoren te vermijden.
 2. Pas de tekst aan in het tekstvak om verschillende teksten te testen.
-3. Kies je gewenste fallback font (bijvoorbeeld Arial of Times).
-3. Gebruik de regelaars onderaan om de volgende waardes aan te passen:
+3. Kies het gewenste fallback-font (probeer er meerdere). Is je gekozen fallback lokaal 
+   niet beschikbaar dan krijg je een foutmelding en wordt hij gereset naar Georgia.
+4. Gebruik de regelaars onderaan om de volgende waardes aan te passen:
+   - Begin met ***ascent-override** en pas deze aan zodat de bovenzijde van de fonts gelijk zijn.
+   - Stel **size-adjust** in op ongeveer de gewenste grootte.
+   - Pas **descent-override** aan om de blauwe lijn gelijk te krijgen met de rode lijn (onderkant). 
+   - Terwijl je dit doet, zul je waarschijnlijk ook ascent-override en size-adjust iets moeten aanpassen.
+   - Ga verder met finetunen.
+   - Testen, finetunen en opnieuw testen.
+   - Gebruik **line-gap-override** als je het alleen met ascent en descent niet lukt. Of als de line-gap 
+     flink afwijkt van het webfont. Poppins heeft bijvoorbeeld een line-gap van 10.
+
    - **size-adjust**: Past de algemene grootte van het fallback font aan
    - **ascent-override**: Past de hoogte van tekens boven de baseline aan
    - **descent-override**: Past de diepte van tekens onder de baseline aan
@@ -134,11 +144,19 @@ You can find a demo on[Visit OpenAI](https://www.openai.com)
     - **descent-override**: Adjusts the depth of characters below the baseline.
     - **line-gap-override**: Adjusts the space between lines.
 
-The adjustments are immediately visible in the preview window, where:
+5. The adjustments are immediately visible in the preview window, where:
 
-- Red text displays the standard font.
-- Blue text displays the fallback font.
-- Overlap is shown in a dark purple color.
+    - Red text displays the standard font.
+    - Blue text displays the fallback font.
+    - Overlap is shown in a dark purple color.
+
+    - Start with **ascent-override** and tweak it so the ascent aligns well with the web font.
+    - Set **size-adjust** to roughly the desired size.
+    - Adjust **descent-override** to line up the blue line with the red line (the bottom). 
+      While doing this, you’ll probably need to fine-tune ascent-override and size-adjust as well.
+    - Keep fine-tuning.
+    - Test, tweak, and test again.
+    - If you can’t get it right with just ascent and descent, or if the line gap is very different from the web font, use **line-gap-override**. For example, Poppins has a line gap of 10.
 
 ## Customization
 
